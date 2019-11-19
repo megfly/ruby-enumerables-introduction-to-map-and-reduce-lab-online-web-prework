@@ -56,3 +56,16 @@ def reduce_to_all_true(source_array)
 end
 
 
+def reduce_to_any_true(source_array)
+  index = 0 
+  while index < source_array.size do 
+    if !!source_array[index] ==true 
+      return true 
+    else 
+      index +=1 
+    end
+  end
+  return false 
+end 
+
+
