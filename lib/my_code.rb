@@ -42,3 +42,17 @@ def reduce_to_total(source_array, starting_point = 0)
 end
 total 
 end
+
+def reduce_to_all_true(source_array)
+  index = 0 
+  while index < source_array.size do 
+    if !!source_array[index] != false 
+      index +=1 
+    else 
+      return false 
+    end
+  end
+  return true 
+end
+
+
